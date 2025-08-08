@@ -17,12 +17,12 @@ class NFSMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $user = 'admin';
-        $password = '1213';
-        
+        $password = '123';
+
         if ($user !== 'admin' || $password !== '123') {
             return redirect()->route('index');
         }
-        
+
         echo '<h1>Passou pelo Middleware NFS<h1>';
         return $next($request);
     }
