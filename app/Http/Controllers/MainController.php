@@ -12,13 +12,14 @@ class MainController extends Controller
     {
         return "Index";
     }
-    
+
     public function viewPage(): View
     {
-        return view('main.welcome');
+        return view('welcome');
     }
 
-    public function upperCase($value): string{
-        return "Valor de caixa alta: ".$this->upperText($value);
+    public function upperCase($value): string
+    {
+        return "Valor de caixa alta: " . $this->upperText($value);
     }
 }
