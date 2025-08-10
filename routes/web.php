@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/view', [MainController::class, 'viewPage'])->name('view');
 Route::get('/test/{value}', [MainController::class, 'upperCase'])->name('test');
 
+// viewMain
+Route::get('/view_main', [\App\Http\Controllers\ViewMain::class, 'index']);
+
 Route::resources([
     'users' => UsersController::class,
     'product' => ProductController::class
