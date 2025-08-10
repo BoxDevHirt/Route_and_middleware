@@ -16,6 +16,6 @@ class ViewMain extends Controller
             'description' => 'This is the main view of the application.',
         ];
 
-        return view('main.viewMain', ['data' => json_decode(json_encode($data, true))]);
+        return view('viewMain', ['data' => json_decode(json_encode($data, true))]);
     }
 }

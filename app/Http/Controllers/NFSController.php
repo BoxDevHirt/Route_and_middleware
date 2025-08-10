@@ -23,7 +23,7 @@ class NFSController extends Controller
         $data = json_decode(json_encode($validate, true));
 
         return View(
-            'main.NFSID',
+            'NFSID',
             [
                 'data' => $data
             ]
